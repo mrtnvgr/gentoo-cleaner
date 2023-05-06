@@ -1,0 +1,16 @@
+[package]
+name = "gentoo-cleaner-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+byte-unit = "4.0.19"
+clap = { version = "4.2.7", features = ["derive"] }
+log = "0.4.17"
+nix = { version = "0.26.2", features = ["acct"] }
+pretty_env_logger = "0.4.0"
+strum = { version = "0.24.1", features = ["derive", "strum_macros"] }
+sys-info = "0.9.1"
+uname = "0.1.1"
