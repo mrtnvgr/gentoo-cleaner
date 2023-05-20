@@ -54,8 +54,8 @@ impl Folder {
 
 #[cfg(not(test))]
 fn get_kernel_version() -> String {
-    let kernel_name = Info::new().unwrap().release;
-    kernel_name.split('-').last().unwrap().to_owned()
+    let release = Info::new().unwrap().release;
+    release.split('-').next().unwrap().to_owned()
 }
 
 fn is_old_kernel(file: &Path, check_prefixes: bool) -> bool {
@@ -77,7 +77,7 @@ fn is_old_kernel(file: &Path, check_prefixes: bool) -> bool {
 
 #[cfg(test)]
 fn get_kernel_version() -> String {
-    "1.0.1-gentoo-dist".to_owned()
+    "1.0.1".to_owned()
 }
 
 #[cfg(test)]
