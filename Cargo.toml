@@ -1,10 +1,10 @@
 [package]
-name = "gentoo-cleaner-rs"
+name = "gentoo-cleaner"
 version = "0.1.0"
 edition = "2021"
 description = "Simple cache cleaner for Gentoo"
 license = "GPL-3.0"
-repository = "https://github.com/mrtnvgr/gentoo-cleaner-rs"
+repository = "https://github.com/mrtnvgr/gentoo-cleaner"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

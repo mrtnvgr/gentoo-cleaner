@@ -1,4 +1,4 @@
-# gentoo-cleaner-rs
+# gentoo-cleaner
 
 Simple cache cleaner for Gentoo.
 
