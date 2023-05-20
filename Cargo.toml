@@ -5,8 +5,8 @@ edition = "2021"
 description = "Simple cache cleaner for Gentoo"
 license = "GPL-3.0"
 repository = "https://github.com/mrtnvgr/gentoo-cleaner"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+keywords = ["gentoo", "linux", "cli"]
+categories = ["command-line-utilities"]
 
 [dependencies]
 byte-unit = "4.0.19"
