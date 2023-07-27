@@ -38,10 +38,10 @@ impl Cleaner {
             self.space_cleaned += get_size(&path)?;
 
             if !self.pretend {
-                if entry.file_type()?.is_file() {
-                    std::fs::remove_file(&path)?;
-                } else {
+                if entry.file_type()?.is_dir() {
                     std::fs::remove_dir_all(&path)?;
+                } else {
+                    std::fs::remove_file(&path)?;
                 }
             }
             log::debug!("{} has been deleted", path.display());
