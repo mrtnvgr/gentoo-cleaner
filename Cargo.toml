@@ -5,8 +5,8 @@ edition = "2021"
 description = "Simple cache cleaner for Gentoo"
 license = "GPL-3.0"
 repository = "https://github.com/mrtnvgr/gentoo-cleaner"
-keywords = ["gentoo", "linux", "cli"]
-categories = ["command-line-utilities"]
+keywords = ["gentoo", "linux", "cli", "cleaner"]
+categories = ["command-line-utilities", "caching"]
 
 [dependencies]
 byte-unit = "4.0.19"
